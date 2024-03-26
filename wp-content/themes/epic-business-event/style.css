@@ -1,0 +1,172 @@
+/*
+Theme Name: Epic Business Event
+Template: bizberg
+Text Domain: epic-business-event
+Author: Bizberg Themes
+Author URI: https://bizbergthemes.com/
+Theme URI: https://bizbergthemes.com/downloads/epic-business-event/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: WordPress Theme for Events and Conferences. Epic Business Event theme is a dedicated event WordPress theme for business meetups, technology conferences and exhibitions, product release events, business conferences and all other sorts of marketing and business events. The theme is compatible with WP Event Manager plugin. Also, It offers special features and templates so it works perfectly with all page builders like Elementor, Visual Composer, Beaver Builder, SiteOrigin etc. This Free WordPress theme is fully responsive, cross-browser compatible, translation ready & SEO friendly. If you run into any problem while using our theme, you can refer to extensive documentation or contact our friendly support team. It fully supports Elementor, all the sections are made from Elementor.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.2
+Tested up to: 6.0
+Requires PHP: 5.6
+*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0;
+}
+
+.homepage_services {
+    padding: 80px 0;
+}
+
+.homepage_services .title_wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.homepage_services .title_wrapper h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.homepage_services .title_wrapper p {
+    font-size: 17px;
+}
+
+.homepage_services .items_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+    column-gap: 30px;
+}
+
+.homepage_services .items_wrapper .item {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+}
+
+.homepage_services .items_wrapper .item .icon i:before {
+    font-size: 35px;
+}
+
+.homepage_services .items_wrapper .item h4{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.homepage_services .items_wrapper .item .icon{
+    padding-top: 10px;
+}
+
+.homepage_services .items_wrapper .item:hover {
+    background: #e91e63;
+}
+
+.homepage_services .items_wrapper .item:hover h4,
+.homepage_services .items_wrapper .item:hover p,
+.homepage_services .items_wrapper .item:hover i{
+    color: #fff;
+}
+
+.why_choose_us {
+    background: #f1f1f173;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.why_choose_us .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.why_choose_us .item .right{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.why_choose_us .item .right h3{
+    font-size: 35px;
+}
+
+.why_choose_us .item .right p{
+    font-size: 17px;
+}
+
+.why_choose_us .item .right a{
+    background: #e91e63;
+    display: inline;
+    width: max-content;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 11px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 1px solid #e91e63;
+}
+
+.why_choose_us .item .left{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why_choose_us .item .right a:hover{
+    background: transparent;
+    color: #e91e63;
+    border: 1px solid #e91e63;
+}
+
+.why_choose_us .item_wrapper {
+    display: grid;
+    grid-row-gap: 60px;
+}
+
+.why_choose_us .item .left.no_image {
+    background: #f1f1f1;
+}
+
+@media (pointer: fine){
+    .blog-nosidebar-1#blog.blog-lists .no-sidebars {
+        padding: 5px;
+        margin-bottom: 0;
+    }
+}
+
+.blog-listing.no-sidebars .blog-post header.entry-header{
+    margin-top: 0 !important;
+}
+
+@media (max-width: 991px){
+    .homepage_services .items_wrapper {
+        grid-template-columns: 1fr;
+    }
+    .why_choose_us .item {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .why_choose_us .item .right {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 412px){
+
+    .why_choose_us .item {
+        grid-template-columns: 1fr;
+    }
+    .why_choose_us .item .left {
+        height: 250px;
+    }
+
+}
